@@ -1,13 +1,4 @@
-from src.logger import logging
+from src.pipline.training_pipeline import TrainPipeline
 
-#logging.debug("This is a debug message")
-
-from src.exception import MyException
-import sys
-
-try:
-    a = 1+'A'
-
-except Exception as e:
-    logging.info(e)
-    raise MyException(e, sys) from e
+pipline = TrainPipeline()
+pipline.run_pipeline()
