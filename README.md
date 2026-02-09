@@ -1,8 +1,7 @@
 # MLOps Project - Vehicle Insurance Data Pipeline
 
-Welcome to this MLOps project, designed to demonstrate a robust pipeline for managing vehicle insurance data. This project aims to impress recruiters and visitors by showcasing the various tools, techniques, services, and features that go into building and deploying a machine learning pipeline for real-world data management. Follow along to learn about project setup, data processing, model deployment, and CI/CD automation!
+This project is a **Vehicle Insurance Prediction** web application that predicts whether a customer is likely to respond positively to a vehicle insurance offer. The application uses a trained machine learning model hosted on AWS S3 and provides a web interface for user input.
 
----
 
 ## 📁 Project Setup and Structure
 
@@ -11,7 +10,6 @@ Welcome to this MLOps project, designed to demonstrate a robust pipeline for man
 
 ### Step 2: Package Management
 - Write the setup for importing local packages in `setup.py` and `pyproject.toml` files.
-- **Tip**: Learn more about these files from `crashcourse.txt`.
 
 ### Step 3: Virtual Environment and Dependencies
 - Create a virtual environment and install required dependencies from `requirements.txt`:
@@ -130,28 +128,14 @@ Welcome to this MLOps project, designed to demonstrate a robust pipeline for man
 3. Connect EC2 as a self-hosted runner on GitHub.
 
 ### Step 18: Final Steps
-1. Open the 5080 port on the EC2 instance.
-2. Access the deployed app by visiting `http://<public_ip>:5080`.
+1. Open the 5000 port on the EC2 instance.
+2. Access the deployed app by visiting `http://<public_ip>:5000`.
 
 ---
 
-## 🛠️ Additional Resources
-- **Crash Course on setup.py and pyproject.toml**: See `crashcourse.txt` for details.
-- **GitHub Secrets**: Manage secrets for secure CI/CD pipelines.
-
----
 
 ## 🎯 Project Workflow Summary
 
 1. **Data Ingestion** ➔ **Data Validation** ➔ **Data Transformation**
 2. **Model Training** ➔ **Model Evaluation** ➔ **Model Deployment**
 3. **CI/CD Automation** with GitHub Actions, Docker, AWS EC2, and ECR
-
----
-
-## 💬 Connect
-If you found this project helpful or have any questions, feel free to reach out!
-
----
-
-This README provides a structured walkthrough of the MLOps project, showcasing the end-to-end pipeline, cloud integration, CI/CD setup, and robust data handling capabilities.
