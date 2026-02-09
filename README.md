@@ -1,6 +1,6 @@
 # MLOps Project - Vehicle Insurance Data Pipeline
 
-This project is a **Vehicle Insurance Prediction** web application that predicts whether a customer is likely to respond positively to a vehicle insurance offer. The application uses a trained machine learning model hosted on AWS S3 and provides a web interface for user input.
+This MLOps project is designed to demonstrate a robust pipeline for managing vehicle insurance data.
 
 
 ## 📁 Project Setup and Structure
