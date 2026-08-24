@@ -1,4 +1,4 @@
-# 🚗 Vehicle Insurance MLOps — Response Prediction Pipeline
+# 🚗 Vehicle Insurance MLOps — Response Prediction Project
 
 An end-to-end **MLOps pipeline** that predicts whether a customer will respond positively to a vehicle insurance offer. The project covers the full lifecycle from raw data in MongoDB Atlas to a live, containerized web service on AWS: data ingestion, validation, transformation, model training, evaluation, artifact storage, CI/CD, and deployment.
 
