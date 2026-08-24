@@ -23,53 +23,53 @@ What makes it an MLOps project is everything *around* the model:
       ┌────────────────────────┐
       │   Code Push (GitHub)   │
       └────────────┬───────────┘
-                    ↓
+                   ↓
       ┌────────────────────────┐
       │  GitHub Actions CI/CD  │
       └────────────┬───────────┘
-                    ↓
+                   ↓
       ┌────────────────────────┐
       │  Data Ingestion (Mongo)│
       └────────────┬───────────┘
-                    ↓
+                   ↓
       ┌────────────────────────┐
       │    Data Validation     │
       └────────────┬───────────┘
-                    ↓
+                   ↓
       ┌────────────────────────┐
       │  Data Transformation   │
       └────────────┬───────────┘
-                    ↓
+                   ↓
       ┌────────────────────────┐
       │     Model Training     │
-      │  (RandomForestClassifier)│
+      │(RandomForestClassifier)│
       └────────────┬───────────┘
-                    ↓
+                   ↓
       ┌────────────────────────┐
       │    Model Evaluation    │
       └────────────┬───────────┘
-                    ↓
+                   ↓
       ┌────────────────────────┐
       │  Model Pusher (S3)     │
       └────────────┬───────────┘
-                    ↓
+                   ↓
       ┌────────────────────────┐
       │   Docker Image Build   │
       └────────────┬───────────┘
-                    ↓
+                   ↓
       ┌────────────────────────┐
       │    Push to AWS ECR     │
       └────────────┬───────────┘
-                    ↓
+                   ↓
       ┌────────────────────────┐
       │    Deploy to AWS EC2   │
       │   (self-hosted runner) │
       └────────────┬───────────┘
-                    ↓
+                   ↓
       ┌────────────────────────┐
       │      FastAPI App       │
       │  (Serves Predictions)  │
-      └─────────────────────────┘
+      └────────────────────────┘
 ```
 
 The whole flow from code push to a live container running on EC2 is orchestrated by a **single GitHub Actions workflow** (`.github/workflows/`), split into a hosted `Continuous-Integration` job (build + push to ECR) and a self-hosted `Continuous-Deployment` job running directly on the EC2 target.
